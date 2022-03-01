@@ -8,7 +8,9 @@ def mean():
     """
     #import necessary modules
     import statistics
+    #initialize list
     x = []
+    #gather numbers, check for number
     while True:
         num = input("\nPlease input a number. If you are done, enter done: ")
         if num == "done":
@@ -18,7 +20,9 @@ def mean():
         except:
             print("Something went wrong")
             mean()
+        # add number to list
         x.append(fnum)
+    # Assign values to variable and print
     Mean = statistics.fmean(x)
     Median = statistics.median(x)
     print (f"your mean is {Mean} and your median is {Median}")
