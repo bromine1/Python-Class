@@ -13,4 +13,4 @@ def calculator():
         print (f"{x}\n")
     return(operations[input("\nType the given name of your operation: ")])
 
-print(calculator())
+print(f"Your result is {calculator()}")
