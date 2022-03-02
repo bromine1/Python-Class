@@ -1,12 +1,20 @@
+#Ryan Stauffer 3-2-2022 warmup
 from math import pi
 
 # area of a circle segment in degrees
 def circleSegmentArea(radius, angle):
+    '''
+    Returns the area of a circle
+    Takes an radius and an angle
+    formula used is \frac{segmet\ area}{360}\pi r^{2}
+    '''
     # area of a circle segment formula: \frac{segmet\ area}{360}\pi r^{2} (Display in Tex)
+    #returns as number for further processing
     return (angle/360) * pi * radius **2
 
 print(circleSegmentArea(5, 60))
 
+# import random
 import random
 
 happenstance = {2: "A Wild Frog Approaches",
