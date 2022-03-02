@@ -1,5 +1,5 @@
 
-def mean():
+def mean(initial_list):
     """
     Mean
     Takes an optional initial list, and an option for no input
@@ -10,6 +10,8 @@ def mean():
     import statistics
     #initialize list
     x = []
+    for num in initial_list:
+        x.append(num)
     #gather numbers, check for number
     while True:
         num = input("\nPlease input a number. If you are done, enter done: ")
@@ -19,7 +21,7 @@ def mean():
             fnum = float(num)
         except:
             print("Something went wrong")
-            mean()
+            mean(x)
         # add number to list
         x.append(fnum)
     # Assign values to variable and print
