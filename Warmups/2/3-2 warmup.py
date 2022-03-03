@@ -35,7 +35,7 @@ def spalshtext():
                     16:"Happy Birthday!",
                     17:"muy, muy interesante",
                     18:"Around this time this month ~ Rachel",
-                    19:"Ya like jazz?",
+                    19:"#Don't leave this line in production",
                     20:"NAT 20!!!"}
 
     return happenstance[random.randint(2,20)]
