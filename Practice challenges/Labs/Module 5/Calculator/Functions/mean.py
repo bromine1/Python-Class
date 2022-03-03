@@ -1,5 +1,5 @@
 
-def mean(initial_list):
+def mean(initial_list=[]):
     """
     Mean
     Takes an optional initial list, and an option for no input
