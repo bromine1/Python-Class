@@ -1,6 +1,6 @@
 #Import Modules
 import random as r
-# Define Funcion
+# # Define Funcion
 def wacky(init=[]):
     #initiallize and append inputted data
     nums = []
@@ -14,11 +14,10 @@ def wacky(init=[]):
         nums.append(x)
     while True:
         #Get the sample range, and check to prevent an IndexError
-        sampleRange = r.randint(1,30)
+        sampleRange = r.randint(1,stop-start)
         if sampleRange <= stop - start:
             break
     #Return wacky value
     return r.sample(nums, k=sampleRange)
-
-print(wacky())
+print(f"Your wacky numbers are {wacky()}")
 exit()
