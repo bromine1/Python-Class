@@ -18,3 +18,5 @@ print(len(empty))
 i_am = 'I\'m what I say I\am'
 print(len(i_am))
 #Guess: I'm what I say Iam
+
+# So Strings are basically iterables? Makes sense
