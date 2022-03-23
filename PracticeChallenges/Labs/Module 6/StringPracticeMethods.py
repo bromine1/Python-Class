@@ -1,7 +1,8 @@
 #Ryan Stauffer
 #3-22-22
 #Python Programming II Classwork Codealong
-#CW 2311-to-23117-String-methods
+#CW 2311-to-23117-String-methods practice
+
 
 #Example #1
 # Demonstrating the capitalize() method:
@@ -172,3 +173,4 @@ print("I know that I know nothing. Part 1.".title())
 # Demonstrating the upper() method:
 print("I know that I know nothing. Part 2.".upper())
 #makes every character uppercase
+
