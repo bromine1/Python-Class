@@ -103,7 +103,6 @@ print("[" + " tau ".lstrip() + "]")
 #Removes LEADING whitespace
 
 #can take a string as an argument, takes those inputs as outputs
-print("I AM WHISPERING".lower())
 
 #Example #11
 # Demonstrating the replace() method:
