@@ -12,7 +12,7 @@ print("fixed that grammer mistake.".capitalize())
 
 #Example #2
 # Demonstrating the center() method:
-print('[' + 'alpha'.center(10) + ']')
+print('[' + 'alpha'.center(10, "*") + ']')
 
 #Attempts to center a string within a given number of characters. Not wrapped around, but in a given amount. Takes that value as an integer, and the seperators between the ends takes a string, defaults to whitespace
 
