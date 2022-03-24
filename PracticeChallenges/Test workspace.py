@@ -1,2 +1,4 @@
-
-print("I know that I know nothing.".swapcase())
+print("""
+hello
+"""
+)
