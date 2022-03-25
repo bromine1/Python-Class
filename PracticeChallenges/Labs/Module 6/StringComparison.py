@@ -37,20 +37,28 @@ works off of the ascii table/binary
 """
 #Example #3
 # Demonstrating the sorted() function:
-first_greek = ['omega', 'alpha', 'pi', 'gamma']
-first_greek_2 = sorted(first_greek)
+# first_greek = ['omega', 'alpha', 'pi', 'gamma']
+# first_greek_2 = sorted(first_greek)
 
-print(first_greek)
-print(first_greek_2)
+# print(first_greek)
+# print(first_greek_2)
 
-print()
+# print()
 
-# Demonstrating the sort() method:
-second_greek = ['omega', 'alpha', 'pi', 'gamma']
-print(second_greek)
+# # Demonstrating the sort() method:
+# second_greek = ['omega', 'alpha', 'pi', 'gamma']
+# print(second_greek)
 
-second_greek.sort()
-print(second_greek)
+# second_greek.sort()
+# print(second_greek)
+
+VideoMedia = ["Fullmetal ALchemist Brotherhood", "She-ra", "Ducktales", "SpaceBalls", "Monty Python and the holy grail"]
+print(f"The sorted list for my favorite movies: \n{sorted(VideoMedia)}, and the unsorted list: \n {VideoMedia}")
+snacks = ["Potato Chips", "Salsa", "Chocolate coverd espresso beans", "Applesauce", "bannanas"]
+print (snacks)
+snacks.sort()
+print(f"I sorted your snacks for you. \n {snacks} \n I hope those werent organised already")
+
 """
 Sorts based on the alphabet
 sorted() is a function that returns an output that is a sorted list
