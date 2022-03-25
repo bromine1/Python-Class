@@ -53,7 +53,8 @@ Sorts based on the alphabet
 sorted() is a function that returns an output that is a sorted list
 .sort() is a method that changes the data in a list object to be sorted
 """
-
+# Its funny how confused I was at the distinction here until I learned
+#why things were the way they were.
 
 
 #Example #4 
