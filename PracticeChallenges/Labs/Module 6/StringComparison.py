@@ -31,7 +31,10 @@ print ('10' == 1)
 print ('10' != 1)
 print ('10' > 10)
 
-
+"""
+Comparing numbers comapres them how strings are comapred regularly
+works off of the ascii table/binary
+"""
 #Example #3
 # Demonstrating the sorted() function:
 first_greek = ['omega', 'alpha', 'pi', 'gamma']
