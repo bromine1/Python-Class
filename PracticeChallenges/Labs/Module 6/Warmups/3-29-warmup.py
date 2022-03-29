@@ -60,3 +60,6 @@ try:
     1/num
 except:
     print("Your math was wrong")
+# Check for all errors
+#Clearly tells user there was an issue
+#I see no issues with this code
