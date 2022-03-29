@@ -1,7 +1,11 @@
-x = "hello"
+#Example #4 Ciso NetAcad 2.7.1.5 (raise)
+def bad_fun(n):
+    raise ZeroDivisionError
 
-#if condition returns True, then nothing happens:
-assert x == "hello"
 
-#if condition returns False, AssertionError is raised:
-assert x == "goodbye"
+try:
+    bad_fun(0)
+except ArithmeticError:
+    print("What happened? An error?")
+
+print("THE END.")
