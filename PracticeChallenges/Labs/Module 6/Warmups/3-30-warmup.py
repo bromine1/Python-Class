@@ -19,9 +19,6 @@
 
 #With the aid of exception handling, we can write robust code for reading an integer from input:
 #Will take an unput and exit a loop if no error occurs
-import errno
-
-
 while True:
     try:
         n = input("Please enter an integer: ")
