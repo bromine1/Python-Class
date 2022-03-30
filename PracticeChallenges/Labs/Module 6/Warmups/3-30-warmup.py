@@ -18,6 +18,7 @@
 # n = int(input("Please enter a number: "))
 
 #With the aid of exception handling, we can write robust code for reading an integer from input:
+
 #Will take an unput and exit a loop if no error occurs
 while True:
     try:
@@ -31,6 +32,8 @@ print("Great, you successfully entered an integer!")
 
 #Coding Exercise #2: 
 #2. We want to ask the user to enter a number. What missing pieces of code could you enter?
+# A check for a valueerror
+#A break statement
 while True: 
     try:
         x = int(input("Please enter a number: "))
@@ -40,8 +43,11 @@ while True:
 
 #Coding Exercise #2: 
 #3. We want to ask the user to enter a number. What missing pieces of code could you enter?
-
+#Better error codes
+#Fstring
+#try statement and volatile statement swap
 #Handling run-time error: division by zero
+
 def this_fails():   
     try:
         x = 1/0
