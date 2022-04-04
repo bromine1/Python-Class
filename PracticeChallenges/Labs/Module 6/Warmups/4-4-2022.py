@@ -1,3 +1,7 @@
+# Ryan Stauffer
+#4-4-2022 Warmup
+# Period 4
+
 #Get values
 
 a = int(input("Enter a: "))
