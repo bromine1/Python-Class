@@ -81,10 +81,18 @@ class Stack:  # Defining the Stack class.
         return (val)
 
 stack_object = Stack()  # Instantiating the object.
+Stack_object_dos = Stack()
 
 stack_object.push(3)
 stack_object.push(2)
 stack_object.push(1)
+
+Stack_object_dos.push(4)
+Stack_object_dos.push(5)
+Stack_object_dos.push(6)
+
+print(stack_object.stack)
+print(Stack_object_dos.stack)
 
 
 print(stack_object.pop())
