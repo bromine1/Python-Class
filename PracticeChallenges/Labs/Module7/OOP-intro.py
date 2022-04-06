@@ -114,3 +114,7 @@ print(stack_object.pop())
 #Objects allow us to store and create large volumes and sets of data, as well as work with them, without maintianing large files
 #Moreover, it lets us make distinctions with different objects
 #and we cna use inheritance and more to extend how we can manipulate the data.
+
+#Abstraction can be defined as only exposing necessary details, but it can also be taken as
+#taking something real and making it more vague while keeping the necessary details
+#usually for modelling real life situations in simulations or code
