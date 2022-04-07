@@ -1,4 +1,4 @@
-class Stack:
+class Stack: # create stack class and initialise list
     def __init__(self):
         self.__stk = []
 
@@ -9,18 +9,19 @@ class Stack:
         val = self.__stk[-1]
         del self.__stk[-1]
         return val
-class CountingStack(Stack):
+class CountingStack(Stack): # Start the counting class
     def __init__(self):
         Stack.__init__(self)
         self.count = 0
 
-    def get_counter(self):
+    def get_counter(self): # Create the counter function
         return(self.count)
 
-    def pop(self):
+    def pop(self): # reuse the pop  function and add to the counter
         self.count += 1
         Stack.pop(self)
 
+#Test data
 stk = CountingStack()
 for i in range(100):
     stk.push(i)
