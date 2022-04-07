@@ -1,31 +1,32 @@
 #3-2-1-15
 class QueueError(ValueError):  # Choose base class for the new exception.
-    pass
+    pass # Just an extra error for user processing
 
 
-class Queue():
+class Queue:
     def __init__(self):
-        self.que = []
+        self.que = [] #start the que
     
     def put(self, elem):
-        self.que.append(elem)
+        self.que.append(elem) # apply to end of que
     
-    def get(self):
+    def get(self): # take from part of que
         try:
             val = self.que[0]
             del self.que[0]
             return val
         except ValueError:
-            raise QueueError
-class SuperQueue(Queue):
-    def __init__(self):
-        super().__init__()
+            raise QueueError # raise special error
+class SuperQueue(Queue): #extend class functionality
+    def __init__(self): #initialize class
+        super().__init__() # super initializes the super class: good if I change names or superclases
     
-    def isempty(self):
+    def isempty(self): # function to tell if something is empty
         if len(self.que) == 0:
             return True
 
-que = SuperQueue()
+#Test Data
+que = SuperQueue() 
 que.put(1)
 que.put("dog")
 que.put(False)
