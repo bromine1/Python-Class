@@ -1,26 +1,22 @@
 #3-2-1-15
-class QueueError(???):  # Choose base class for the new exception.
-    #
-    #  Write code here
-    #
+class QueueError(ValueError):  # Choose base class for the new exception.
+    pass # Just an extra error for user processing
 
 
 class Queue:
     def __init__(self):
-        #
-        # Write code here
-        #
-
+        self.que = [] #start the que
+    
     def put(self, elem):
-        #
-        # Write code here
-        #
-
-    def get(self):
-        #
-        # Write code here
-        #
-
+        self.que.append(elem) # apply to end of que
+    
+    def get(self): # take from part of que
+        try:
+            val = self.que[0]
+            del self.que[0]
+            return val
+        except ValueError:
+            raise QueueError # raise special error
 
 que = Queue()
 que.put(1)
@@ -31,3 +27,4 @@ try:
         print(que.get())
 except:
     print("Queue error")
+
