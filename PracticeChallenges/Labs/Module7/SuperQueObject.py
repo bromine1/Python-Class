@@ -3,7 +3,7 @@ class QueueError(ValueError):  # Choose base class for the new exception.
     pass
 
 
-class Queue:
+class Queue():
     def __init__(self):
         self.que = []
     
@@ -19,10 +19,10 @@ class Queue:
             raise QueueError
 class SuperQueue(Queue):
     def __init__(self):
-        Queue.__init__(self)
+        super().__init__()
     
     def isempty(self):
-        if len(Queue.que) == 0:
+        if len(self.que) == 0:
             return True
 
 que = SuperQueue()
