@@ -19,7 +19,7 @@ class Queue:
             raise QueueError # raise special error
 class SuperQueue(Queue): #extend class functionality
     def __init__(self): #initialize class
-        super().__init__() # super initializes the super class: good if I change names or superclases
+        super().__init__() # super initializes the super class: good if I change names or super classes
     
     def isempty(self): # function to tell if something is empty
         if len(self.que) == 0:
