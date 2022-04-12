@@ -7,7 +7,10 @@ class Timer:
             raise IndexError
 
     def __str__(self):
-        return f"{self.hrs}, {self.min}, {self.sec}"
+        hh = str(self.hrs).ljust(2, '0')
+        mm = str(self.min).ljust(2, '0')
+        ss = str(self.sec).ljust(2, '0')
+        return f"{hh}:{mm}:{ss}"
 
     def next_second(self): #increments second
         self.sec +=1 # add second
