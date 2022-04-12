@@ -9,10 +9,10 @@ class Timer:
     def __str__(self):
         return f"{self.hrs}, {self.min}, {self.sec}"
 
-    def next_second(self):
-        self.sec +=1
-        if self.sec == 60:
-            self.sec = 0
+    def next_second(self): #increments second
+        self.sec +=1 # add second
+        if self.sec == 60: #check for time overflow
+            self.sec = 0 #reset and repeat with next value
             self.min += 1
             if self.min == 60:
                 self.min = 0
@@ -21,9 +21,9 @@ class Timer:
                     self.hrs = 0
 
     def prev_second(self):
-        self.sec -=1
-        if self.sec == -1:
-            self.sec = 59
+        self.sec -=1 #subtract second
+        if self.sec == -1: #check for time underflow
+            self.sec = 59 #reset and repeat with next value
             self.min -= 1
             if self.min == -1:
                 self.min = 59
@@ -38,6 +38,3 @@ timer.next_second()
 print(timer)
 timer.prev_second()
 print(timer)
-
-
-#There is a module for this
