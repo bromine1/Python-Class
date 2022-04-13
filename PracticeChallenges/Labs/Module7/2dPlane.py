@@ -6,7 +6,7 @@ from math import sqrt
 
 
 class Point:
-    def __init__(self, x=0.0, y=0.0):
+    def __init__(self, x=0.0, y=0.0): #initialize data
         self.__x = x
         self.__y = y
 
@@ -17,12 +17,12 @@ class Point:
         return self.__y
 
     def distance_from_xy(self, x, y):
-        return sqrt((self.__x - x)**2 + (self.__y - y)**2)
+        return sqrt((self.__x - x)**2 + (self.__y - y)**2) #Distance formula
 
     def distance_from_point(self, point):
         pointX = point.getx()
         pointY = point.gety()
-        return sqrt((self.__x - pointX)**2 + (self.__y - pointY)**2)
+        return sqrt((self.__x - pointX)**2 + (self.__y - pointY)**2) #distance formula
 
 point1 = Point(0, 0)
 point2 = Point(1, 1)
