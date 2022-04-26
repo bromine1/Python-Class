@@ -9,6 +9,28 @@ class Stack: # create stack class and initialise list
         val = self.__stk[-1]
         del self.__stk[-1]
         return val
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class CountingStack(Stack): # Start the counting class
     def __init__(self):
         Stack.__init__(self)
