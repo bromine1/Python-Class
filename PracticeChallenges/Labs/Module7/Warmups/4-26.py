@@ -1,21 +1,13 @@
 #Rstauff
 #Python 2 Warmup April 26th 2022
 import math
-
 try:
-
     print(math.sqrt(-9))
-
 except ValueError:
-
     print("inf")
-
 else:
-
     print("fine")
-
 finally:
-
     print("the end")
 
 #Prints:
@@ -24,7 +16,6 @@ finally:
 
 
 import math
-
 class NewValueError(ValueError):
 
     def __init__(self, name, color, state):
