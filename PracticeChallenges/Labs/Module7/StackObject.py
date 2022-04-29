@@ -39,7 +39,7 @@ class CountingStack(Stack): # Start the counting class
     def get_counter(self): # Create the counter function
         return(self.count)
 
-    def pop(self): # reuse the pop  function and add to the counter
+    def pop(self): # Modify pop to count items exited
         self.count += 1
         Stack.pop(self)
 
