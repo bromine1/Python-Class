@@ -1,11 +1,11 @@
 from os import strerror
-
+import re
 
 
 
 file = 'PracticeChallenges/Labs/Module8/Files/samplefile.txt'
 def countCharacter(text):
-    latinNum = {chr(k):0 for (k) in range(ord('a'), ord('z'))}  # Dictionary Comprehension of the alphabet
+    latinNum = {chr(letter):0 for (letter) in range(ord('a'), ord('z'))}  # Dictionary Comprehension of the alphabet
     for line in text:
         for character in line: #count characters
             if character.isalpha():
@@ -15,8 +15,16 @@ def countCharacter(text):
 try:
     with open(file, 'r', encoding='utf_8') as text:
         histList = countCharacter(text)
-        for x in histList.items():
-            if x[1] > 0:
-                print(f"{x[0]} 🠖 {x[1]}")
 except IOError as e:
     exit(f"error {strerror(e.errno)}")
+
+
+histogram = lambda x, y: f"{x} 🠖 {y}"
+
+writeFile = re.split(".txt$", file)
+
+with open(f"{writeFile[0]}.hist.txt", "w") as text:
+    for key in sorted(histList.keys(), key=lambda x: histList[x], reverse=True):
+        if histList[key] > 0:
+            print(histogram(key,histList[key]))
+            text.write(f"{histogram(key,histList[key])}\n")
