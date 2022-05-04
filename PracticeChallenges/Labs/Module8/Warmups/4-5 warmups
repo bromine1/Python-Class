@@ -1,0 +1,35 @@
+# Python program to explain os.strerror() method
+
+
+#Section will error out, no parenthases, and code should be changed to I
+#Is meant to print out the first 20 OS error codes
+
+# try:
+#     import os
+#     n = 20
+#     for i in range(1, n + 1)
+#         error = os.strerror(code) 
+#         print("Error code % d:" % i, error)
+# except Error:
+#     print('initial error')
+
+#Fixed version:
+try:
+    import os
+
+    n = 20
+
+    for i in range(1, n + 1):
+        error = os.strerror(i) 
+        print("Error code % d:" % i, error)
+except:
+    print('initial error')
+
+# 1. readlines will return an empty string
+# 2 code is meant to read out the consonants in a file
+# Needs indentation
+# Should account for newline characters
+for line in open("file", "rt"):
+    for char in line:
+        if char.lower() not in "aeiouy ":
+            print(char, end='')
