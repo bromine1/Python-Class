@@ -1,3 +1,7 @@
+from os import strerror
+
+
+
 
 file = 'PracticeChallenges/Labs/Module8/Files/samplefile.txt'
 def countCharacter(text):
@@ -8,8 +12,11 @@ def countCharacter(text):
                 latinNum[character.lower()] += 1 #add them to the dictionary
     return latinNum
 
-with open(file, 'r', encoding='utf_8') as text:
-    histList = countCharacter(text)
-    for x in histList.items():
-        if x[1] > 0:
-            print(f"{x[0]} 🠖 {x[1]}")
+try:
+    with open(file, 'r', encoding='utf_8') as text:
+        histList = countCharacter(text)
+        for x in histList.items():
+            if x[1] > 0:
+                print(f"{x[0]} 🠖 {x[1]}")
+except IOError as e:
+    exit(f"error {strerror(e.errno)}")
