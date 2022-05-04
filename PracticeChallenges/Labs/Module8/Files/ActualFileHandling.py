@@ -76,7 +76,6 @@ for i in range(len(data)):
 for b in data:
     print(hex(b))  # Converts byte data to hexadecimal
 
-print("Current working area \n\n\n\n")
 
 data = bytearray(ord('0'))
 
