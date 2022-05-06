@@ -1,8 +1,6 @@
 from os import strerror
 import re
 
-
-
 file = 'PracticeChallenges/Labs/Module8/Files/samplefile.txt'
 def countCharacter(text):
     latinNum = {chr(letter):0 for (letter) in range(ord('a'), ord('z'))}  # Dictionary Comprehension of the alphabet
